@@ -12,7 +12,7 @@ body {
     max-width: 800px;
     background: #111d4a;
     color: #fff;
-    grid-template: 200px auto auto 100px / auto auto;
+    grid-template: 200px 1em auto auto 100px 1em / 1em auto auto 1em;
 }
 
 .card-img {
@@ -32,14 +32,16 @@ body {
     color: #05cbe9;
     font-size: 1.75rem;
     margin: 0;
-    grid-column: 1 / -1;
+    grid-column: 2 / -2;
+    grid-row: 3;
 }
 
 .card-body {
     font-size: 1rem;
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.6;
-    grid-column: 1 / -1;
+    grid-column: 2 / -2;
+    grid-row: 4;
 }
 
 .card-btn {
@@ -50,6 +52,8 @@ body {
     font-weight: 700;
     padding: .35em 1em;
     letter-spacing: 1px;
+    grid-column: 3;
+    grid-row: 5;
     align-self: end;
     justify-self: end;
 }
@@ -58,6 +62,8 @@ body {
     margin: 0;
     opacity: .6;
     line-height: 1;
+    grid-column: 2;
+    grid-row: 5;
     align-self: end;
 }
 
